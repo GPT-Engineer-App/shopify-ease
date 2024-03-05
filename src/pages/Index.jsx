@@ -6,14 +6,14 @@ const products = [
   {
     id: 1,
     name: "Product 1",
-    price: "$20.00",
-    imageUrl: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9kdWN0fGVufDB8fHx8MTcwOTYyNTQyMnww&ixlib=rb-4.0.3&q=80&w=1080',
+    price: "R20.00",
+    imageUrl: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9kdWN0fGVufDB8fHx8MTcwOTYyNTQyMnww&ixlib=rb-4.0.3&q=80&w=1080",
   },
   {
     id: 2,
     name: "Product 2",
-    price: "$30.00",
-    imageUrl: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwyfHxwcm9kdWN0fGVufDB8fHx8MTcwOTYyNTQyMnww&ixlib=rb-4.0.3&q=80&w=1080',
+    price: "R30.00",
+    imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwyfHxwcm9kdWN0fGVufDB8fHx8MTcwOTYyNTQyMnww&ixlib=rb-4.0.3&q=80&w=1080",
   },
   // Add more products as needed
 ];
@@ -46,7 +46,7 @@ const Index = () => {
               </Box>
 
               <Box>
-                {product.price}
+                {product.price.replace("$", "R")}
                 <Box as="span" color={useColorModeValue("gray.600", "gray.400")} fontSize="sm">
                   / each
                 </Box>
